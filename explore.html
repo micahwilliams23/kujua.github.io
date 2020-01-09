@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    home
+{% endblock %}
+
+{% block main %}
+    <div class="container-fluid explore">
+        <div>
+            <text class="display-4">explore</text>
+        </div>
+        <div id="explore-header">
+            <form class="d-flex justify-content-center">
+                <input autocomplete="off" placeholder="Search" name="explore-search" id="explore-search" class="search-input" type="text">
+            </form>
+        </div><br>
+        <text>results found: <span>{{ number_results }}</span></text>
+    </div>
+    <div class="container" id="table-fit">
+        <!-- table dynamically generated from database in application.py -->
+        {{ table |safe }}
+    </div>
+    <div class="blank-space-100"> </div>
+{% endblock %}
+
+{% block script %}
+<script>
+
+    document.getElementById("explore-search").onclick = function() {
+        document.getElementById("explore-search").placeholder="";
+    };
+
+    let query = document.getElementById("explore-search");
+        query.onkeyup = function() {
+            console.log(query.value);
+            $.post("/search", {"query":query.value}, function(data){
+                document.querySelector("#table-fit").innerHTML = data["table"];
+                document.querySelector("span").innerHTML = data["number_results"];
+            });
+        };
+
+</script>
+{% endblock %}

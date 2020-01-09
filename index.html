@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    home
+{% endblock %}
+
+{% block main %}
+    <div class="container-fluid bg-light splash">
+        <text class="display-4 d-flex justify-content-center" id="hook">a platform for exploring food</text>
+        <h6 class="subtitle">because all food is <i>not</i> created equal.</h6><br>
+        <form action="/search" method="POST" class="d-flex justify-content-center">
+            <input autocomplete="off" placeholder="Search" name="main-search" id="main-search" class="search-input" type="text">
+            <text class="enter-text" id="main-enter">press enter to search</text>
+        </form>
+    </div>
+    <div class="container-fluid bg-black text-white splash">
+        <div class="row definition">
+                <div class="col-lg-6" id="main-left">
+                    <text class="display-4 swahili">kujua</text><br>
+                    <text class="subtext swahili" id="child-define">to know (Swahili)</text><br><br>
+                    <p class="subtext">"Eat food. Not too much. Mostly plants."</p>
+                    <p class="subtext">These words by author Michael Pollan provide a broad guideline for how and what to eat, but a trip to the market shows that in practice, food is much more complicated.</p>
+                    <p class="subtext">Should you eat organic? How far away is local? What additives are okay to eat? What pesticides should you be concerned about? What does it mean to be 'all natural'? Is it worth paying more for fair trade chocolate? What's the deal with high fructose corn syrup?</p>
+                    <p class="subtext">What's <i>really</i> in your food?</p>
+                    <form action="/search" method="POST" class="search-form">
+                        <input autocomplete="off" placeholder="Search" name="bottom-search" id="bottom-search" class="search-input" type="text">
+                        <text class="enter-text" id="bottom-enter">press enter to search</text>
+                    </form>
+                </div>
+                <div class="col-lg-6" id="main-right">
+                    <text> [photo album here] </text>
+                </div>
+        </div>
+
+        <!-- Spacer to prevent cutoff of bottom on resize-->
+        <div class="blank-space-100">  </div>
+    </div>
+{% endblock %}

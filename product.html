@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    home
+{% endblock %}
+
+{% block main %}
+
+    <div class="temporary-message-box">
+        <text class="temporary-message">This example is hypothetical. For real entries, the information would be generated on a per-product basis.</text>
+    </div>
+
+    <div class="container" id="product-container">
+        <div class="row">
+            <div class="col-md-9">
+                <text class="product-header">Kellogg's<sup class="register-icon">®</sup> Special K<sup class="register-icon">®</sup> Original Cereal</text>
+            </div>
+            <div class="col-md-3">
+                <img class="product-product-image" src="//images.kglobalservices.com/www.specialk.com/en_us/product/product_4508681/prod_img-198168_special_k_original_00038000016110_c1l1_2.png">
+            </div>
+            <div class="product-info">
+                <ul class="product-info-list">
+                    <li><b>Key ingredients: </b>corn, sugar</li>
+                    <li><b>Production location: </b>Louisville, KY <span id="product-distance">(4,371.29 miles away)</span></li>
+                    <li><b>Pesticides used: </b>none</li>
+                    <li><b>Certifications: </b>USDA Organic, Fair Trade, Gluten Free</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="blank-space-100"> </div>
+{% endblock %}
+
+{% block script %}
+<script>
+
+</script>
+{% endblock %}

@@ -1,0 +1,350 @@
+
+/* included for testing */
+.red{background: #fdd;}
+.green{background: #dfd;}
+.blue{background: #ddf;}
+
+/* below code from https://bootstrapcreative.com/can-adjust-text-size-bootstrap-responsive-design/ */
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) {
+    body {font-size:0.75rem;} /*1rem = 16px*/
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+    body {font-size:1rem;} /*1rem = 16px*/
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    body {font-size:1.25rem;} /*1rem = 16px*/
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    body {font-size:1.5rem;} /*1rem = 16px*/
+}
+
+
+
+.adamina
+{
+    font-family: 'Adamina', serif;
+}
+
+.splash
+{
+    min-height: 42vw;
+}
+
+nav
+{
+    height: 55px;
+    border-bottom: 5px solid #fefe00ea;
+}
+
+.bg-yellow
+{
+    background: #fefe00fa;
+}
+
+.bg-light
+{
+    background: #ffffffaf;
+}
+
+.bg-black
+{
+    background: #000000;
+}
+
+.brand-name
+{
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.brand-name:hover
+{
+    text-decoration: none;
+    color: #fefe00;
+}
+
+.nav-link
+{
+    font-size: 18px;
+}
+
+.display-4
+{
+    text-align: center;
+}
+
+.subtitle
+{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+#hook
+{
+    padding-top: 24vh;
+}
+
+.search-input
+{
+    width: 20vw;
+    height: 40px;
+    border-radius: 5px;
+    background: none;
+    text-align: center;
+    border: 2px solid #000;
+}
+
+#main-left
+{
+    min-width: 50%;
+    padding-left: 20px;
+}
+
+#main-right
+{
+    min-width: 30%;
+    background: #000;
+}
+
+#main-enter
+{
+    display: none;
+    color: #aaa;
+    left: 50vw;
+    top: 59vh;
+}
+
+#bottom-enter
+{
+    display: none;
+    color: #aaa;
+    top: ;
+    left: 23vw;
+}
+
+#bottom-search
+{
+    position: relative;
+    color: #fff;
+    left: 12vw;
+    border: solid 2px #fafa00af;
+}
+
+#bottom-search:focus
+{
+    background: #fafa0040;
+}
+
+.search-input:focus
+{
+    background: #0000000d;
+    outline:none;
+}
+
+.enter-text
+{
+    position: absolute;
+    font-size: 12px;
+}
+
+.definition
+{
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+.footer
+{
+    position: relative;
+    display: block;
+    bottom: 0px;
+    height: 30px;
+    width: 100vw;
+    background: inherit;
+    color: inherit;
+    padding-right: 15px;
+    text-align: right;
+}
+
+#child-define
+{
+    margin-left: 50px;
+    color: #aaa;
+}
+
+.swahili
+{
+    margin-left: 30px;
+}
+
+.subtext
+{
+    font-size: 20px;
+    text-align: justify;
+    padding: 10px;
+    padding-right: 50px;
+}
+
+::-webkit-scrollbar
+{
+    display: none;
+}
+
+::placeholder
+{
+    font-family: "Adamina", serif;
+    color: #aaa;
+}
+
+.register-icon
+{
+    position: relative;
+    top: -1.25rem;
+    font-size: 1rem;
+}
+
+.explore
+{
+    text-align: center;
+    padding-top: 45px;
+    height: 300px;
+}
+
+#explore-header
+{
+    padding-top: 40px;
+}
+
+#table-fit
+{
+    display: table;
+    width: 60vw;
+}
+
+.explore-row
+{
+    display: table-cell;
+    text-align: center;
+    min-height: 200px;
+    line-height: 1.25;
+}
+
+.explore-table-element
+{
+    display: block;
+    height: 240px;
+    background: #fafafa;
+    border: 1.5px solid #444;
+    border-radius: 7px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.explore-table-element:hover
+{
+    background: #ededed;
+}
+
+.blank-space-100
+{
+    height: 150px;
+}
+
+.explore-product-image
+{
+    height: 160px;
+}
+
+.explore-product-name
+{
+    font-size: 12px;
+    padding-top: 5px;
+    line-height: 1.5;
+}
+
+#product-container
+{
+    position: relative;
+    top: 40px;
+    padding-top: 20px;
+    width: 60vw;
+    min-height: 70vh;
+    border-radius: 5px;
+    background: #eee;
+    border: 2px solid;
+}
+
+.product-header
+{
+    text-align: right;
+    padding: 25px;
+    padding-right: 10px;
+    height: 3rem;
+    font-size: 2rem;
+}
+
+.product-product-image
+{
+    height: 200px;
+    position: absolute;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+
+#explore-result-box
+{
+    padding: 0px;
+}
+
+.product-info
+{
+    padding-top: 1rem;
+    line-height: 3rem;
+    font-size: 1rem;
+}
+
+.product-info-list
+{
+    list-style-type: none;
+}
+
+#product-distance
+{
+    font-size: smaller;
+}
+
+.temporary-message-box
+{
+    position: relative;
+    display: table;
+    left: 27.5vw;
+    top: 20px;
+    background: #d77;
+    border-radius: 5px;
+    width: 45vw;
+    height: 3rem;
+}
+
+.temporary-message
+{
+    font-family: "Helvetica", sans-serif;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 40px;
+    border-radius: 5px;
+    border: 2px solid;
+}
