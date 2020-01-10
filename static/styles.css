@@ -40,7 +40,7 @@
 nav
 {
     height: 55px;
-    border-bottom: 5px solid #fefe00ea;
+    border-bottom: 5px solid #eded00;
 }
 
 .bg-yellow
@@ -75,7 +75,15 @@ nav
 
 .nav-link
 {
-    font-size: 18px;
+    font-size: 1.1rem;
+    color: #ddd;
+}
+
+.nav-link:hover
+{
+    background: #eded00;
+    border-radius: 2px;
+    color: #000;
 }
 
 .display-4
@@ -167,13 +175,10 @@ nav
 .footer
 {
     position: relative;
-    display: block;
-    bottom: 0px;
-    height: 30px;
-    width: 100vw;
-    background: inherit;
-    color: inherit;
-    padding-right: 15px;
+    background: #000;
+    border-top: 3px solid #fafa00;
+    color: #fff;
+    padding: 15px;
     text-align: right;
 }
 

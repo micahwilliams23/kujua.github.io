@@ -13,6 +13,17 @@
             <text class="enter-text" id="main-enter">press enter to search</text>
         </form>
     </div>
+    <!-- Main search results box -->
+    <div class="container results-box">
+        <ul>
+            <li> </li>
+            <li> </li>
+            <li> </li>
+            <li> </li>
+        </ul>
+    </div>
+
+
     <div class="container-fluid bg-black text-white splash">
         <div class="row definition">
                 <div class="col-lg-6" id="main-left">
@@ -35,4 +46,16 @@
         <!-- Spacer to prevent cutoff of bottom on resize-->
         <div class="blank-space-100">  </div>
     </div>
+
+
+    <script>
+
+        let query = document.getElementById("explore-search");
+        query.onkeyup = function() {
+            $.post("/search", {"query":query.value}, function(data){
+                document.querySelector("#table-fit").innerHTML = data["table"];
+            });
+        };
+
+    </script>
 {% endblock %}

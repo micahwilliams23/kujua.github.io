@@ -32,7 +32,6 @@
 
     let query = document.getElementById("explore-search");
         query.onkeyup = function() {
-            console.log(query.value);
             $.post("/search", {"query":query.value}, function(data){
                 document.querySelector("#table-fit").innerHTML = data["table"];
                 document.querySelector("span").innerHTML = data["number_results"];
